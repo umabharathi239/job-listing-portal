@@ -1,0 +1,44 @@
+.filters-container {
+  width: 25%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  justify-content: flex-start;
+}
+
+.filters-container h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="range"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.clear-filters {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}

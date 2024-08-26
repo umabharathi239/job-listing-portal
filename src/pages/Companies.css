@@ -1,0 +1,155 @@
+/* Companies Page Container */
+.companies-page {
+  padding: 20px;
+}
+
+.companies-banner {
+  background: linear-gradient(120deg, #0077b6 0%, #0093E9 100%);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Adding Patterns */
+.companies-banner::before,
+.companies-banner::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Large circle */
+.companies-banner::before {
+  width: 250px;
+  height: 250px;
+  top: 10%;
+  left: -5%;
+}
+
+/* Smaller circle */
+.companies-banner::after {
+  width: 150px;
+  height: 150px;
+  bottom: 10%;
+  right: -5%;
+}
+
+.companies-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.companies-banner p {
+  font-size: 1.2rem;
+}
+
+/* Companies Content Layout */
+.companies-content {
+  display: flex;
+  gap: 20px;
+}
+
+/* Filters Sidebar */
+.filters-sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters-sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.clear-filters-btn {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.clear-filters-btn:hover {
+  background-color: #005f8e;
+}
+
+/* Company Listings */
+.company-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  flex: 1; /* Take up remaining space next to filters */
+}
+
+.company-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.company-logo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.company-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.company-info p {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .companies-content {
+    flex-direction: column;
+  }
+
+  .filters-sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .company-listings {
+    grid-template-columns: 1fr;
+  }
+}

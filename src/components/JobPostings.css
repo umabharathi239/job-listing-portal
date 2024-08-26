@@ -1,0 +1,146 @@
+.job-postings {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.job-postings h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.status-filter {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  min-width: 120px; /* Fixed minimum width to prevent shrinking */
+  text-align: center; /* Center-align the text to avoid awkward positioning */
+}
+
+.job-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.job-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(50% - 20px);
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-info h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.job-info p {
+  margin: 0;
+  color: #777;
+}
+
+.date-posted {
+  font-size: 12px;
+  color: #999;
+}
+
+
+.status-tag {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 80px; /* Set a minimum width to avoid shrinking */
+  text-align: center;
+  display: inline-block;
+}
+
+.status-tag.open {
+  background-color: #4caf50;
+  color: white;
+}
+
+.status-tag.closed {
+  background-color: #f44336;
+  color: white;
+}
+
+.job-stats {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+
+.job-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job-actions button:hover {
+  background-color: #0056b3;
+}
+
+.job-actions button:last-child {
+  margin-right: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .controls-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .job-cards-container {
+    flex-direction: column;
+  }
+
+  .job-card {
+    width: 100%;
+  }
+}

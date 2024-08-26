@@ -1,0 +1,41 @@
+.job-listings-container {
+  display: flex;
+  align-items: flex-start;
+   /* Align the filters and job listings at the top */
+}
+
+
+.job-listings-content {
+  width: 75%; /* Adjust the width for the job listings section */
+  padding-left: 20px;
+}
+
+.job-listings-header {
+  margin-bottom: 20px;
+}
+
+.job-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.job-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  margin-bottom: 5px;
+}
+
+.job-card button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

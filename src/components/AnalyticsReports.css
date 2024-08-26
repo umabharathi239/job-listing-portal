@@ -1,0 +1,71 @@
+/* Enhanced Spacing and Layout */
+.container {
+  margin: 0 auto;
+  padding: 40px 20px;
+  max-width: 1200px;
+}
+
+.MuiGrid-item {
+  padding: 20px;
+}
+
+.MuiCard-root {
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth Transitions */
+.chart-container {
+  transition: all 0.3s ease;
+}
+
+/* Professional Typography and Colors */
+.MuiTypography-h6 {
+  color: #333;
+  font-weight: 700;
+  font-size: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.MuiTypography-body1 {
+  color: #555;
+  font-size: 1rem;
+}
+
+.MuiCard-root {
+  background-color: #ffffff;
+}
+
+.chart-container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Innovative Design Elements */
+.card-header {
+  background: linear-gradient(135deg, #42A5F5, #66BB6A);
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .chart-container {
+    height: 200px;
+  }
+
+  .MuiTypography-h6 {
+    font-size: 1rem;
+  }
+}

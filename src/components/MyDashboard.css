@@ -1,0 +1,46 @@
+.my-dashboard {
+    padding: 20px;
+  }
+  
+  .quick-summary {
+    margin-bottom: 20px;
+  }
+  
+  .summary-boxes {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .summary-box {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+  }
+  
+  .recent-jobs, .upcoming-interviews, .user-activity-feed {
+    margin-bottom: 20px;
+  }
+  
+  .job-listing, .interview {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+  }
+  
+  .feed ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feed ul li {
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  

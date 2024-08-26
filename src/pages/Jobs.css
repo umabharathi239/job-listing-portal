@@ -1,0 +1,130 @@
+/* General Styling */
+.browse-jobs-container {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header Section */
+.browse-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: #fff;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.browse-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.browse-header p {
+  font-size: 1.3rem;
+}
+
+/* Content Layout */
+.browse-content {
+  display: flex;
+  gap: 30px;
+}
+
+/* Filters Section */
+.filters-sidebar {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters-sidebar h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.clear-filters {
+  background: #ff6b6b;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.clear-filters:hover {
+  background: #ff4b4b;
+}
+
+/* Job Listings Section */
+.job-listings {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.job-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.job-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.job-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-meta span {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.job-meta button {
+  background: #00b4d8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.job-meta button:hover {
+  background: #0077b6;
+}
+

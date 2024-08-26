@@ -1,0 +1,67 @@
+/* Sidebar styling */
+.sidebar {
+  background-color: #1b2a41; /* Dark navy background */
+  padding: 20px;
+  width: 250px;
+  height: 100vh;
+}
+
+/* Sidebar header */
+.sidebar-header h2 {
+  color: #e0e6ed; /* Light blue-gray text for header */
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Sidebar navigation */
+.sidebar-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  background-color: #336699; /* Professional medium blue */
+  color: #ffffff; /* White text */
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
+
+/* Hover effect */
+.sidebar-nav li:hover {
+  background-color: #2a5c88; /* Darker medium blue on hover */
+}
+
+/* Active state */
+.sidebar-nav li.active {
+  background-color: #558bb3; /* Lighter blue for active state */
+  color: #000000; /* Black text for active state */
+}
+
+/* Logout button styling */
+.sidebar-nav li:last-child {
+  background-color: #294d70; /* Darker blue for logout */
+  color: #e0e6ed; /* Light blue-gray text */
+}
+
+.sidebar-nav li:last-child:hover {
+  background-color: #203f59; /* Even darker blue on hover */
+}
+
+/* Main content styling */
+.main-content {
+  margin-left: 270px; /* Make space for the sidebar */
+  padding: 20px;
+}
+
+.content-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
