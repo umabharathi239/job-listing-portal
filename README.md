@@ -68,12 +68,3 @@ Build job-listing-portal from the source and install dependencies:
    ```bash
    npm install
 ---
-
-
-Job-listing-portal uses the (test framework) test framework.
-Run the test suite with:
-
-```bash
-npm test
-
----
